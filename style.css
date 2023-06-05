@@ -26,6 +26,7 @@ main {
     padding: 22px 25px;
     border-radius: 15px;
     width: 350px;
+    min-height: 595px;
     background: var(--Very-dark-blue-card-BG);
 }
 
