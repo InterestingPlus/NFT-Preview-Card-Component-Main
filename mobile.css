@@ -1,4 +1,7 @@
 @media screen and (max-width: 800px) {
+    #div{
+        display: none;
+    }
     main {
         margin: 20px 0;
         width: 90%;
