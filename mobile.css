@@ -6,6 +6,7 @@
         margin: 20px 0;
         width: 90%;
         height: auto;
+        min-height: auto;
         padding: 25px;
     }
 
