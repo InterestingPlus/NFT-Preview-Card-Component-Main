@@ -35,6 +35,7 @@ main {
 main .img {
     position: relative;
     --opacity: 0;
+    animation: animation1 .8s alternate;
 }
 main .img #main {
     border-radius: 10px;
@@ -76,6 +77,7 @@ main .content {
 }
 main .content h1 {
     font-size: 22px;
+    animation: animation2 .8s alternate;
 }
 main .content h1:hover {
     color: var(--Cyan);
@@ -87,6 +89,7 @@ main .content p {
     line-height: 1.6;
     font-weight: 400;
     font-size: 17px;
+    animation: animation3 .8s alternate;
 }
 
 /* Bottom Content Section */
@@ -104,10 +107,12 @@ main .bottom .first {
     font-weight: 600;
     color: var(--Cyan);
     letter-spacing: .5px;
+    animation: animation4 .8s alternate;
 }
 main .bottom .second {
     font-weight: 600;
     color: var(--Soft-blue);
+    animation: animation5 .8s alternate;
 }
 main .bottom span img {
     margin-right: 5px;
@@ -119,6 +124,7 @@ main .profile {
     display: flex;
     align-items: center;
     margin-top: 16px;
+    animation: animation6 .8s alternate;
 }
 main .profile img {
     margin-left: -2px;
@@ -138,7 +144,7 @@ main .profile p span:hover {
     color: var(--Cyan);
 }
 
-/* Footer Section */
+/* Credit Section */
 .attribution {
     position: absolute;
     font-size: 11px;
@@ -154,4 +160,67 @@ main .profile p span:hover {
 }
 .attribution a:hover {
     color: orange;
+}
+
+
+/* Animation */
+@keyframes animation1 {
+    0%{
+        opacity: 0;
+        transform: scale(-1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animation2 {
+    0%{
+        opacity: 0;
+        transform: translate(-30px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes animation3 {
+    0%{
+        opacity: 0;
+        transform: translate(30px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes animation4 {
+    0%{
+        opacity: 0;
+        transform: scale(-1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animation5 {
+    0%{
+        opacity: 0;
+        transform: scale(-1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animation6 {
+    0%{
+        opacity: 0;
+        transform: translate(0,-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
 }
